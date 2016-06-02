@@ -74,7 +74,7 @@ public class MySQLite extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor =
                 db.query("animals", //a. table name
-                        new String[] { "_id", "gatunek", "kolor", "wielkosc", "opis" }, // b.column names
+                        new String[] { "id", "gatunek", "kolor", "wielkosc", "opis" }, // b.column names
                         " id = ?", // c. selections
                         new String[] { String.valueOf(id) }, // d. selections args
                         null, // e. group by
