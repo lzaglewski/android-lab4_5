@@ -14,21 +14,51 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_marginEnd="33dp"
-        android:layout_alignTop="@+id/button"
-        android:layout_toStartOf="@+id/button" />
+        android:id="@+id/kolor"
+        android:layout_below="@+id/gatunek"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Kolor" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Dodaj"
         android:id="@+id/button"
         android:onClick="wyslij"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="42dp"
+        android:layout_below="@+id/opis"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gatunek"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/kolor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/wielkosc"
+        android:layout_below="@+id/kolor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Wielkość" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/opis"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/wielkosc"
+        android:layout_alignParentStart="true"
+        android:lines="5"
+        android:hint="Opis" />
 
 
 </RelativeLayout>
